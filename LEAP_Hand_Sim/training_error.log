@@ -1,0 +1,394 @@
+Importing module 'gym_38' (/mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/isaacgym/python/isaacgym/_bindings/linux-x86_64/gym_38.so)
+Setting GYM_USD_PLUG_INFO_PATH to /mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/isaacgym/python/isaacgym/_bindings/linux-x86_64/usd/plugInfo.json
+PyTorch version 2.4.1+cu121
+Device count 1
+/mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/isaacgym/python/isaacgym/_bindings/src/gymtorch
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Using /home/pratyay/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Emitting ninja build file /home/pratyay/.cache/torch_extensions/py38_cu121/gymtorch/build.ninja...
+Building extension module gymtorch...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+TensorBoard log directory: /mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/LEAP_Hand_Sim/leapsim/envpg_logs/tensorboard/envpg_20261119_192013
+Not connected to PVD
+Physics Engine: PhysX
+Physics Device: cpu
+GPU Pipeline: disabled
+Generated morphology: fingertip length scale=1.0000
+URDF: /mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/LEAP_Hand_Sim/assets/leap_hand_envpg/robot.urdf
+---- Primitive List ----
+['cube']
+---- Object List ----
+['cube']
+
+========== LEAP HAND EnvPG-AC ==========
+Envs: 128 | obs: 102 | actions: 16
+Design: palm friction=1.0000, fingertip friction=1.0000, fingertip length=1.0000
+Friction bounds: [0.10000000149011612, 0.10000000149011612, 0.800000011920929] [3.0, 3.0, 1.2000000476837158]
+Algorithm: generalized Q(s,a,zeta_current,xi_future) + 3D EnvPG surrogate
+Morphology: mesh/URDF regenerated and simulator rebuilt after length updates.
+Gradient note: length gradient is critic-surrogate, not physical mesh FD.
+========================================
+Budget: 9,622,800 environment steps | 
+Outer design updates: 20 | inner cycles/update: 118
+outer=01/20 inner=001/118 steps=4,096 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-22.5462 critic_loss=21.37058 actor_loss=-20.88581 elapsed=0.0m
+outer=01/20 inner=002/118 steps=8,192 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-29.2144 critic_loss=10.13580 actor_loss=-20.94328 elapsed=0.1m
+outer=01/20 inner=003/118 steps=12,288 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.2185 critic_loss=10.62872 actor_loss=-21.00896 elapsed=0.1m
+outer=01/20 inner=004/118 steps=16,384 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.5028 critic_loss=10.54983 actor_loss=-21.02038 elapsed=0.1m
+outer=01/20 inner=005/118 steps=20,480 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.2286 critic_loss=10.82399 actor_loss=-20.85387 elapsed=0.2m
+outer=01/20 inner=006/118 steps=24,576 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.5320 critic_loss=10.36750 actor_loss=-21.27764 elapsed=0.2m
+outer=01/20 inner=007/118 steps=28,672 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.6976 critic_loss=9.79975 actor_loss=-21.37196 elapsed=0.2m
+outer=01/20 inner=008/118 steps=32,768 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.0673 critic_loss=9.22809 actor_loss=-21.24936 elapsed=0.3m
+outer=01/20 inner=009/118 steps=36,864 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-57.8976 critic_loss=8.98812 actor_loss=-21.19411 elapsed=0.3m
+outer=01/20 inner=010/118 steps=40,960 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.2978 critic_loss=9.34363 actor_loss=-21.16108 elapsed=0.3m
+outer=01/20 inner=011/118 steps=45,056 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.1505 critic_loss=8.85867 actor_loss=-21.42376 elapsed=0.4m
+outer=01/20 inner=012/118 steps=49,152 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.5366 critic_loss=8.04389 actor_loss=-21.33863 elapsed=0.4m
+outer=01/20 inner=013/118 steps=53,248 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.0147 critic_loss=8.46403 actor_loss=-21.41491 elapsed=0.4m
+outer=01/20 inner=014/118 steps=57,344 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-74.3012 critic_loss=8.86680 actor_loss=-21.34910 elapsed=0.5m
+outer=01/20 inner=015/118 steps=61,440 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-65.4691 critic_loss=9.01229 actor_loss=-21.78686 elapsed=0.5m
+outer=01/20 inner=016/118 steps=65,536 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.2551 critic_loss=8.56309 actor_loss=-21.47101 elapsed=0.5m
+outer=01/20 inner=017/118 steps=69,632 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.3476 critic_loss=8.30464 actor_loss=-21.74684 elapsed=0.6m
+outer=01/20 inner=018/118 steps=73,728 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.3557 critic_loss=8.58407 actor_loss=-21.56002 elapsed=0.6m
+outer=01/20 inner=019/118 steps=77,824 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.5686 critic_loss=8.37286 actor_loss=-21.78500 elapsed=0.6m
+outer=01/20 inner=020/118 steps=81,920 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.2279 critic_loss=8.58947 actor_loss=-21.56788 elapsed=0.7m
+outer=01/20 inner=021/118 steps=86,016 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.6597 critic_loss=8.45958 actor_loss=-21.93230 elapsed=0.7m
+outer=01/20 inner=022/118 steps=90,112 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.1571 critic_loss=8.55382 actor_loss=-21.44137 elapsed=0.7m
+outer=01/20 inner=023/118 steps=94,208 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.0606 critic_loss=7.85336 actor_loss=-22.01134 elapsed=0.8m
+outer=01/20 inner=024/118 steps=98,304 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.1625 critic_loss=8.37702 actor_loss=-21.94692 elapsed=0.8m
+outer=01/20 inner=025/118 steps=102,400 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.3351 critic_loss=8.42879 actor_loss=-21.96544 elapsed=0.8m
+outer=01/20 inner=026/118 steps=106,496 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.4431 critic_loss=8.55986 actor_loss=-22.24355 elapsed=0.9m
+outer=01/20 inner=027/118 steps=110,592 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.6406 critic_loss=7.72558 actor_loss=-22.28461 elapsed=0.9m
+outer=01/20 inner=028/118 steps=114,688 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.8263 critic_loss=8.33703 actor_loss=-22.51937 elapsed=0.9m
+outer=01/20 inner=029/118 steps=118,784 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.1386 critic_loss=8.23379 actor_loss=-22.19058 elapsed=1.0m
+outer=01/20 inner=030/118 steps=122,880 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.9837 critic_loss=7.89639 actor_loss=-22.32900 elapsed=1.0m
+outer=01/20 inner=031/118 steps=126,976 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.0949 critic_loss=8.55219 actor_loss=-22.57181 elapsed=1.0m
+outer=01/20 inner=032/118 steps=131,072 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.7213 critic_loss=8.18755 actor_loss=-22.31547 elapsed=1.1m
+outer=01/20 inner=033/118 steps=135,168 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.2041 critic_loss=8.41232 actor_loss=-22.29744 elapsed=1.1m
+outer=01/20 inner=034/118 steps=139,264 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.2919 critic_loss=8.72233 actor_loss=-22.56950 elapsed=1.1m
+outer=01/20 inner=035/118 steps=143,360 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.2534 critic_loss=9.01022 actor_loss=-22.54037 elapsed=1.2m
+outer=01/20 inner=036/118 steps=147,456 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.4986 critic_loss=8.79231 actor_loss=-22.52834 elapsed=1.2m
+outer=01/20 inner=037/118 steps=151,552 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.8910 critic_loss=8.58520 actor_loss=-22.83121 elapsed=1.2m
+outer=01/20 inner=038/118 steps=155,648 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.8885 critic_loss=8.50505 actor_loss=-22.78953 elapsed=1.3m
+outer=01/20 inner=039/118 steps=159,744 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-32.6781 critic_loss=8.72822 actor_loss=-22.94446 elapsed=1.3m
+outer=01/20 inner=040/118 steps=163,840 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-31.5849 critic_loss=8.51975 actor_loss=-23.10692 elapsed=1.3m
+outer=01/20 inner=041/118 steps=167,936 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.7888 critic_loss=8.74447 actor_loss=-22.81146 elapsed=1.4m
+outer=01/20 inner=042/118 steps=172,032 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-51.3893 critic_loss=8.53973 actor_loss=-22.98248 elapsed=1.4m
+outer=01/20 inner=043/118 steps=176,128 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.9231 critic_loss=9.40253 actor_loss=-23.25174 elapsed=1.4m
+outer=01/20 inner=044/118 steps=180,224 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.3777 critic_loss=8.99326 actor_loss=-23.77687 elapsed=1.5m
+outer=01/20 inner=045/118 steps=184,320 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.7884 critic_loss=8.50508 actor_loss=-23.29440 elapsed=1.5m
+outer=01/20 inner=046/118 steps=188,416 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.5303 critic_loss=9.06173 actor_loss=-23.64429 elapsed=1.5m
+outer=01/20 inner=047/118 steps=192,512 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.9221 critic_loss=8.47857 actor_loss=-23.48859 elapsed=1.6m
+outer=01/20 inner=048/118 steps=196,608 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.8426 critic_loss=8.91759 actor_loss=-23.65834 elapsed=1.6m
+outer=01/20 inner=049/118 steps=200,704 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.4442 critic_loss=9.12024 actor_loss=-23.62331 elapsed=1.6m
+outer=01/20 inner=050/118 steps=204,800 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.3903 critic_loss=8.45189 actor_loss=-23.77516 elapsed=1.7m
+outer=01/20 inner=051/118 steps=208,896 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.1513 critic_loss=9.24335 actor_loss=-24.22511 elapsed=1.7m
+outer=01/20 inner=052/118 steps=212,992 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-51.2435 critic_loss=9.04937 actor_loss=-24.17928 elapsed=1.7m
+outer=01/20 inner=053/118 steps=217,088 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.1906 critic_loss=9.31104 actor_loss=-23.80963 elapsed=1.8m
+outer=01/20 inner=054/118 steps=221,184 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.2635 critic_loss=8.91983 actor_loss=-24.51450 elapsed=1.8m
+outer=01/20 inner=055/118 steps=225,280 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.1767 critic_loss=9.81166 actor_loss=-24.41146 elapsed=1.8m
+outer=01/20 inner=056/118 steps=229,376 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.1849 critic_loss=9.43896 actor_loss=-24.42398 elapsed=1.9m
+outer=01/20 inner=057/118 steps=233,472 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.4679 critic_loss=9.58364 actor_loss=-24.69899 elapsed=1.9m
+outer=01/20 inner=058/118 steps=237,568 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.4428 critic_loss=9.97207 actor_loss=-24.28022 elapsed=1.9m
+outer=01/20 inner=059/118 steps=241,664 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.2919 critic_loss=8.90162 actor_loss=-24.66529 elapsed=2.0m
+outer=01/20 inner=060/118 steps=245,760 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-33.4397 critic_loss=10.15396 actor_loss=-24.65416 elapsed=2.0m
+outer=01/20 inner=061/118 steps=249,856 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.5456 critic_loss=9.63720 actor_loss=-24.49002 elapsed=2.0m
+outer=01/20 inner=062/118 steps=253,952 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.2491 critic_loss=9.34882 actor_loss=-24.97659 elapsed=2.1m
+outer=01/20 inner=063/118 steps=258,048 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.5310 critic_loss=9.89368 actor_loss=-24.72402 elapsed=2.1m
+outer=01/20 inner=064/118 steps=262,144 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.1564 critic_loss=9.37481 actor_loss=-25.13365 elapsed=2.1m
+outer=01/20 inner=065/118 steps=266,240 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.7627 critic_loss=9.99032 actor_loss=-25.45993 elapsed=2.2m
+outer=01/20 inner=066/118 steps=270,336 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.6703 critic_loss=10.35440 actor_loss=-24.97159 elapsed=2.2m
+outer=01/20 inner=067/118 steps=274,432 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.2755 critic_loss=10.39908 actor_loss=-25.42679 elapsed=2.3m
+outer=01/20 inner=068/118 steps=278,528 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.8497 critic_loss=10.06911 actor_loss=-25.49522 elapsed=2.3m
+outer=01/20 inner=069/118 steps=282,624 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.0716 critic_loss=9.74267 actor_loss=-25.31531 elapsed=2.3m
+outer=01/20 inner=070/118 steps=286,720 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.2467 critic_loss=9.96325 actor_loss=-25.95736 elapsed=2.4m
+outer=01/20 inner=071/118 steps=290,816 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-62.5011 critic_loss=9.48712 actor_loss=-25.45242 elapsed=2.4m
+outer=01/20 inner=072/118 steps=294,912 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.9128 critic_loss=10.25680 actor_loss=-25.54830 elapsed=2.4m
+outer=01/20 inner=073/118 steps=299,008 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.6551 critic_loss=9.71579 actor_loss=-25.64852 elapsed=2.5m
+outer=01/20 inner=074/118 steps=303,104 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.1397 critic_loss=10.13490 actor_loss=-26.11378 elapsed=2.5m
+outer=01/20 inner=075/118 steps=307,200 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.3615 critic_loss=10.37299 actor_loss=-26.19209 elapsed=2.5m
+outer=01/20 inner=076/118 steps=311,296 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.7591 critic_loss=9.58898 actor_loss=-25.89454 elapsed=2.6m
+outer=01/20 inner=077/118 steps=315,392 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.1449 critic_loss=10.44011 actor_loss=-26.18941 elapsed=2.6m
+outer=01/20 inner=078/118 steps=319,488 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.6771 critic_loss=10.19417 actor_loss=-26.25987 elapsed=2.6m
+outer=01/20 inner=079/118 steps=323,584 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.1080 critic_loss=11.03909 actor_loss=-26.27321 elapsed=2.7m
+outer=01/20 inner=080/118 steps=327,680 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-56.8856 critic_loss=10.04943 actor_loss=-26.86356 elapsed=2.7m
+outer=01/20 inner=081/118 steps=331,776 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.2157 critic_loss=10.93696 actor_loss=-26.46269 elapsed=2.7m
+outer=01/20 inner=082/118 steps=335,872 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.1558 critic_loss=11.21998 actor_loss=-26.65433 elapsed=2.8m
+outer=01/20 inner=083/118 steps=339,968 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.8123 critic_loss=10.71242 actor_loss=-26.73702 elapsed=2.8m
+outer=01/20 inner=084/118 steps=344,064 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.1471 critic_loss=11.24352 actor_loss=-26.52949 elapsed=2.8m
+outer=01/20 inner=085/118 steps=348,160 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.4154 critic_loss=10.84231 actor_loss=-26.57014 elapsed=2.9m
+outer=01/20 inner=086/118 steps=352,256 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.1315 critic_loss=10.99090 actor_loss=-26.66782 elapsed=2.9m
+outer=01/20 inner=087/118 steps=356,352 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.6293 critic_loss=10.95363 actor_loss=-27.12878 elapsed=2.9m
+outer=01/20 inner=088/118 steps=360,448 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.4743 critic_loss=11.22109 actor_loss=-27.39063 elapsed=3.0m
+outer=01/20 inner=089/118 steps=364,544 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.4976 critic_loss=10.82557 actor_loss=-27.03617 elapsed=3.0m
+outer=01/20 inner=090/118 steps=368,640 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.0361 critic_loss=11.04659 actor_loss=-26.64408 elapsed=3.0m
+outer=01/20 inner=091/118 steps=372,736 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.6325 critic_loss=10.73126 actor_loss=-27.48095 elapsed=3.1m
+outer=01/20 inner=092/118 steps=376,832 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.5795 critic_loss=10.75232 actor_loss=-27.69294 elapsed=3.1m
+outer=01/20 inner=093/118 steps=380,928 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.1459 critic_loss=10.65160 actor_loss=-27.26995 elapsed=3.1m
+outer=01/20 inner=094/118 steps=385,024 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.0337 critic_loss=11.00939 actor_loss=-26.87402 elapsed=3.2m
+outer=01/20 inner=095/118 steps=389,120 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-32.9282 critic_loss=11.31785 actor_loss=-27.47116 elapsed=3.2m
+outer=01/20 inner=096/118 steps=393,216 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-33.0193 critic_loss=10.68515 actor_loss=-27.56070 elapsed=3.2m
+outer=01/20 inner=097/118 steps=397,312 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.0959 critic_loss=10.94535 actor_loss=-27.29084 elapsed=3.3m
+outer=01/20 inner=098/118 steps=401,408 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.2381 critic_loss=11.71011 actor_loss=-27.71041 elapsed=3.3m
+outer=01/20 inner=099/118 steps=405,504 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.4987 critic_loss=11.76420 actor_loss=-27.80058 elapsed=3.3m
+outer=01/20 inner=100/118 steps=409,600 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.9170 critic_loss=11.10355 actor_loss=-27.50339 elapsed=3.4m
+outer=01/20 inner=101/118 steps=413,696 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.2798 critic_loss=11.38623 actor_loss=-27.71239 elapsed=3.4m
+outer=01/20 inner=102/118 steps=417,792 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.1471 critic_loss=10.46255 actor_loss=-27.77402 elapsed=3.4m
+outer=01/20 inner=103/118 steps=421,888 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.8768 critic_loss=10.78919 actor_loss=-27.37961 elapsed=3.5m
+outer=01/20 inner=104/118 steps=425,984 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-55.1385 critic_loss=11.75957 actor_loss=-27.47244 elapsed=3.5m
+outer=01/20 inner=105/118 steps=430,080 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-50.0556 critic_loss=11.32759 actor_loss=-28.21896 elapsed=3.5m
+outer=01/20 inner=106/118 steps=434,176 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.5421 critic_loss=11.59023 actor_loss=-27.41403 elapsed=3.6m
+outer=01/20 inner=107/118 steps=438,272 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.1742 critic_loss=11.27687 actor_loss=-27.90810 elapsed=3.6m
+outer=01/20 inner=108/118 steps=442,368 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-68.4988 critic_loss=11.60544 actor_loss=-27.26399 elapsed=3.6m
+outer=01/20 inner=109/118 steps=446,464 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.2581 critic_loss=11.38810 actor_loss=-27.72946 elapsed=3.7m
+outer=01/20 inner=110/118 steps=450,560 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.0589 critic_loss=11.05788 actor_loss=-28.80142 elapsed=3.7m
+outer=01/20 inner=111/118 steps=454,656 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.9707 critic_loss=11.78178 actor_loss=-27.96755 elapsed=3.7m
+outer=01/20 inner=112/118 steps=458,752 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.2771 critic_loss=11.62539 actor_loss=-27.91637 elapsed=3.8m
+outer=01/20 inner=113/118 steps=462,848 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.3516 critic_loss=12.29764 actor_loss=-28.00250 elapsed=3.8m
+outer=01/20 inner=114/118 steps=466,944 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.7943 critic_loss=11.75882 actor_loss=-27.76528 elapsed=3.8m
+outer=01/20 inner=115/118 steps=471,040 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-66.2346 critic_loss=11.11710 actor_loss=-28.25373 elapsed=3.9m
+outer=01/20 inner=116/118 steps=475,136 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.6680 critic_loss=11.91891 actor_loss=-28.12673 elapsed=3.9m
+outer=01/20 inner=117/118 steps=479,232 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.2902 critic_loss=12.23154 actor_loss=-27.89073 elapsed=4.0m
+outer=01/20 inner=118/118 steps=483,328 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.6049 critic_loss=11.72422 actor_loss=-28.66251 elapsed=4.0m
+Saved: /mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/LEAP_Hand_Sim/leapsim/envpg_logs/envpg_outer_001.pt
+outer=02/20 inner=001/118 steps=487,424 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.7681 critic_loss=11.50148 actor_loss=-28.66278 elapsed=4.0m
+outer=02/20 inner=002/118 steps=491,520 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.9548 critic_loss=11.74239 actor_loss=-28.80260 elapsed=4.1m
+outer=02/20 inner=003/118 steps=495,616 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.5960 critic_loss=11.17503 actor_loss=-28.82327 elapsed=4.1m
+outer=02/20 inner=004/118 steps=499,712 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.5320 critic_loss=11.83757 actor_loss=-28.38320 elapsed=4.1m
+outer=02/20 inner=005/118 steps=503,808 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.6449 critic_loss=11.53766 actor_loss=-28.19161 elapsed=4.2m
+outer=02/20 inner=006/118 steps=507,904 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.1991 critic_loss=11.84918 actor_loss=-29.06251 elapsed=4.2m
+outer=02/20 inner=007/118 steps=512,000 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.7841 critic_loss=11.50844 actor_loss=-28.23310 elapsed=4.2m
+outer=02/20 inner=008/118 steps=516,096 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.8325 critic_loss=11.75703 actor_loss=-28.89220 elapsed=4.3m
+outer=02/20 inner=009/118 steps=520,192 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.6025 critic_loss=10.97678 actor_loss=-28.80852 elapsed=4.3m
+outer=02/20 inner=010/118 steps=524,288 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.8819 critic_loss=11.97599 actor_loss=-28.49197 elapsed=4.3m
+outer=02/20 inner=011/118 steps=528,384 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.8991 critic_loss=11.72202 actor_loss=-29.19696 elapsed=4.4m
+outer=02/20 inner=012/118 steps=532,480 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.8340 critic_loss=12.09911 actor_loss=-28.69681 elapsed=4.4m
+outer=02/20 inner=013/118 steps=536,576 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.9684 critic_loss=12.35221 actor_loss=-28.91407 elapsed=4.4m
+outer=02/20 inner=014/118 steps=540,672 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.5193 critic_loss=12.49782 actor_loss=-29.28633 elapsed=4.5m
+outer=02/20 inner=015/118 steps=544,768 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.7756 critic_loss=13.01602 actor_loss=-29.14233 elapsed=4.5m
+outer=02/20 inner=016/118 steps=548,864 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.9180 critic_loss=11.91010 actor_loss=-29.45368 elapsed=4.5m
+outer=02/20 inner=017/118 steps=552,960 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-33.5573 critic_loss=11.89915 actor_loss=-29.64160 elapsed=4.6m
+outer=02/20 inner=018/118 steps=557,056 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.6725 critic_loss=11.87138 actor_loss=-29.15023 elapsed=4.6m
+outer=02/20 inner=019/118 steps=561,152 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.4451 critic_loss=12.60476 actor_loss=-29.38469 elapsed=4.6m
+outer=02/20 inner=020/118 steps=565,248 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.0759 critic_loss=11.62540 actor_loss=-29.35379 elapsed=4.7m
+outer=02/20 inner=021/118 steps=569,344 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.3605 critic_loss=12.24886 actor_loss=-29.37835 elapsed=4.7m
+outer=02/20 inner=022/118 steps=573,440 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.8484 critic_loss=11.83689 actor_loss=-29.02270 elapsed=4.7m
+outer=02/20 inner=023/118 steps=577,536 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.0096 critic_loss=12.64650 actor_loss=-29.80600 elapsed=4.8m
+outer=02/20 inner=024/118 steps=581,632 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.9892 critic_loss=11.90567 actor_loss=-29.58870 elapsed=4.8m
+outer=02/20 inner=025/118 steps=585,728 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.4310 critic_loss=11.72306 actor_loss=-30.04126 elapsed=4.8m
+outer=02/20 inner=026/118 steps=589,824 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.4904 critic_loss=12.13919 actor_loss=-29.52710 elapsed=4.9m
+outer=02/20 inner=027/118 steps=593,920 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-50.6581 critic_loss=12.58293 actor_loss=-29.09692 elapsed=4.9m
+outer=02/20 inner=028/118 steps=598,016 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-51.5732 critic_loss=12.33238 actor_loss=-29.22664 elapsed=4.9m
+outer=02/20 inner=029/118 steps=602,112 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.6822 critic_loss=12.25602 actor_loss=-29.84532 elapsed=5.0m
+outer=02/20 inner=030/118 steps=606,208 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.0795 critic_loss=12.65355 actor_loss=-29.89427 elapsed=5.0m
+outer=02/20 inner=031/118 steps=610,304 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.3599 critic_loss=12.04235 actor_loss=-30.22989 elapsed=5.0m
+outer=02/20 inner=032/118 steps=614,400 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.7206 critic_loss=12.71222 actor_loss=-29.72303 elapsed=5.1m
+outer=02/20 inner=033/118 steps=618,496 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.7449 critic_loss=11.80857 actor_loss=-30.12056 elapsed=5.1m
+outer=02/20 inner=034/118 steps=622,592 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.0838 critic_loss=12.72635 actor_loss=-29.49302 elapsed=5.1m
+outer=02/20 inner=035/118 steps=626,688 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.4040 critic_loss=13.18948 actor_loss=-29.90260 elapsed=5.2m
+outer=02/20 inner=036/118 steps=630,784 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.3766 critic_loss=12.43658 actor_loss=-29.45513 elapsed=5.2m
+outer=02/20 inner=037/118 steps=634,880 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.9213 critic_loss=12.42415 actor_loss=-30.29712 elapsed=5.2m
+outer=02/20 inner=038/118 steps=638,976 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.0801 critic_loss=12.88824 actor_loss=-29.77454 elapsed=5.3m
+outer=02/20 inner=039/118 steps=643,072 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.5383 critic_loss=12.94538 actor_loss=-29.84821 elapsed=5.3m
+outer=02/20 inner=040/118 steps=647,168 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.7157 critic_loss=12.84156 actor_loss=-29.98874 elapsed=5.4m
+outer=02/20 inner=041/118 steps=651,264 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.2243 critic_loss=13.15404 actor_loss=-30.58980 elapsed=5.4m
+outer=02/20 inner=042/118 steps=655,360 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.9267 critic_loss=13.28222 actor_loss=-30.46272 elapsed=5.4m
+outer=02/20 inner=043/118 steps=659,456 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.8669 critic_loss=12.67100 actor_loss=-30.57739 elapsed=5.5m
+outer=02/20 inner=044/118 steps=663,552 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.4631 critic_loss=12.51983 actor_loss=-30.19574 elapsed=5.5m
+outer=02/20 inner=045/118 steps=667,648 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.5426 critic_loss=13.21737 actor_loss=-30.47351 elapsed=5.5m
+outer=02/20 inner=046/118 steps=671,744 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-50.5023 critic_loss=12.42042 actor_loss=-30.19175 elapsed=5.6m
+outer=02/20 inner=047/118 steps=675,840 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.5686 critic_loss=12.68310 actor_loss=-30.19621 elapsed=5.6m
+outer=02/20 inner=048/118 steps=679,936 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.7523 critic_loss=12.17250 actor_loss=-30.20673 elapsed=5.6m
+outer=02/20 inner=049/118 steps=684,032 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-56.7909 critic_loss=12.41623 actor_loss=-30.57994 elapsed=5.7m
+outer=02/20 inner=050/118 steps=688,128 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.9931 critic_loss=13.26918 actor_loss=-30.89024 elapsed=5.7m
+outer=02/20 inner=051/118 steps=692,224 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.9470 critic_loss=12.52112 actor_loss=-30.36006 elapsed=5.7m
+outer=02/20 inner=052/118 steps=696,320 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.9508 critic_loss=12.98997 actor_loss=-29.99810 elapsed=5.8m
+outer=02/20 inner=053/118 steps=700,416 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.8118 critic_loss=12.62665 actor_loss=-30.71709 elapsed=5.8m
+outer=02/20 inner=054/118 steps=704,512 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.3048 critic_loss=12.58059 actor_loss=-31.01631 elapsed=5.8m
+outer=02/20 inner=055/118 steps=708,608 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.2364 critic_loss=13.36046 actor_loss=-30.13775 elapsed=5.9m
+outer=02/20 inner=056/118 steps=712,704 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.9866 critic_loss=12.33459 actor_loss=-30.18045 elapsed=5.9m
+outer=02/20 inner=057/118 steps=716,800 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.0128 critic_loss=13.22584 actor_loss=-30.75586 elapsed=5.9m
+outer=02/20 inner=058/118 steps=720,896 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-53.7409 critic_loss=12.43788 actor_loss=-30.40620 elapsed=6.0m
+outer=02/20 inner=059/118 steps=724,992 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.9981 critic_loss=13.22851 actor_loss=-30.24152 elapsed=6.0m
+outer=02/20 inner=060/118 steps=729,088 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.1532 critic_loss=13.05092 actor_loss=-31.29612 elapsed=6.0m
+outer=02/20 inner=061/118 steps=733,184 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.7355 critic_loss=12.94252 actor_loss=-31.07332 elapsed=6.1m
+outer=02/20 inner=062/118 steps=737,280 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.8438 critic_loss=13.17630 actor_loss=-31.36520 elapsed=6.1m
+outer=02/20 inner=063/118 steps=741,376 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.5634 critic_loss=12.90634 actor_loss=-30.82484 elapsed=6.1m
+outer=02/20 inner=064/118 steps=745,472 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.9766 critic_loss=12.46156 actor_loss=-30.97121 elapsed=6.2m
+outer=02/20 inner=065/118 steps=749,568 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.0916 critic_loss=13.13483 actor_loss=-31.47504 elapsed=6.2m
+outer=02/20 inner=066/118 steps=753,664 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.1591 critic_loss=13.06700 actor_loss=-31.67129 elapsed=6.3m
+outer=02/20 inner=067/118 steps=757,760 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.3298 critic_loss=12.43040 actor_loss=-31.40246 elapsed=6.3m
+outer=02/20 inner=068/118 steps=761,856 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.3897 critic_loss=12.25931 actor_loss=-30.91318 elapsed=6.3m
+outer=02/20 inner=069/118 steps=765,952 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.9684 critic_loss=13.21592 actor_loss=-30.50622 elapsed=6.3m
+outer=02/20 inner=070/118 steps=770,048 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-51.5432 critic_loss=13.24736 actor_loss=-30.50419 elapsed=6.4m
+outer=02/20 inner=071/118 steps=774,144 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.4466 critic_loss=12.37170 actor_loss=-31.70680 elapsed=6.4m
+outer=02/20 inner=072/118 steps=778,240 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.6786 critic_loss=12.81253 actor_loss=-31.13234 elapsed=6.5m
+outer=02/20 inner=073/118 steps=782,336 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.5187 critic_loss=12.52829 actor_loss=-31.14236 elapsed=6.5m
+outer=02/20 inner=074/118 steps=786,432 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.2416 critic_loss=12.45214 actor_loss=-31.59448 elapsed=6.5m
+outer=02/20 inner=075/118 steps=790,528 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-33.9192 critic_loss=13.14018 actor_loss=-30.36313 elapsed=6.6m
+outer=02/20 inner=076/118 steps=794,624 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-31.6735 critic_loss=12.99672 actor_loss=-31.80494 elapsed=6.6m
+outer=02/20 inner=077/118 steps=798,720 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.1525 critic_loss=12.06520 actor_loss=-31.78382 elapsed=6.6m
+outer=02/20 inner=078/118 steps=802,816 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-33.4644 critic_loss=13.13975 actor_loss=-32.25346 elapsed=6.7m
+outer=02/20 inner=079/118 steps=806,912 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.7088 critic_loss=13.30844 actor_loss=-31.79824 elapsed=6.7m
+outer=02/20 inner=080/118 steps=811,008 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.7922 critic_loss=12.01101 actor_loss=-30.69914 elapsed=6.7m
+outer=02/20 inner=081/118 steps=815,104 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.7314 critic_loss=12.39159 actor_loss=-31.25824 elapsed=6.8m
+outer=02/20 inner=082/118 steps=819,200 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.6940 critic_loss=12.76123 actor_loss=-31.21909 elapsed=6.8m
+outer=02/20 inner=083/118 steps=823,296 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.1715 critic_loss=12.46149 actor_loss=-32.15812 elapsed=6.8m
+outer=02/20 inner=084/118 steps=827,392 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.2698 critic_loss=12.51839 actor_loss=-32.03517 elapsed=6.9m
+outer=02/20 inner=085/118 steps=831,488 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.4271 critic_loss=12.80869 actor_loss=-31.87894 elapsed=6.9m
+outer=02/20 inner=086/118 steps=835,584 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.5507 critic_loss=12.70482 actor_loss=-32.31548 elapsed=6.9m
+outer=02/20 inner=087/118 steps=839,680 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.5332 critic_loss=12.54262 actor_loss=-32.14566 elapsed=7.0m
+outer=02/20 inner=088/118 steps=843,776 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.0632 critic_loss=13.00507 actor_loss=-32.87996 elapsed=7.0m
+outer=02/20 inner=089/118 steps=847,872 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.5015 critic_loss=13.73009 actor_loss=-31.47315 elapsed=7.0m
+outer=02/20 inner=090/118 steps=851,968 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.6815 critic_loss=12.37830 actor_loss=-31.81279 elapsed=7.1m
+outer=02/20 inner=091/118 steps=856,064 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.8441 critic_loss=13.59064 actor_loss=-31.36924 elapsed=7.1m
+outer=02/20 inner=092/118 steps=860,160 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.3424 critic_loss=13.36871 actor_loss=-32.62972 elapsed=7.1m
+outer=02/20 inner=093/118 steps=864,256 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-55.7645 critic_loss=13.29180 actor_loss=-32.44224 elapsed=7.2m
+outer=02/20 inner=094/118 steps=868,352 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-55.2209 critic_loss=12.86960 actor_loss=-31.97494 elapsed=7.2m
+outer=02/20 inner=095/118 steps=872,448 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.3369 critic_loss=12.72857 actor_loss=-32.09737 elapsed=7.2m
+outer=02/20 inner=096/118 steps=876,544 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.7730 critic_loss=13.63647 actor_loss=-32.19134 elapsed=7.3m
+outer=02/20 inner=097/118 steps=880,640 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.6060 critic_loss=13.11227 actor_loss=-32.84594 elapsed=7.3m
+outer=02/20 inner=098/118 steps=884,736 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.6329 critic_loss=13.42471 actor_loss=-32.16462 elapsed=7.3m
+outer=02/20 inner=099/118 steps=888,832 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.1691 critic_loss=13.24862 actor_loss=-32.13955 elapsed=7.4m
+outer=02/20 inner=100/118 steps=892,928 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.2223 critic_loss=13.02872 actor_loss=-32.40236 elapsed=7.4m
+outer=02/20 inner=101/118 steps=897,024 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.1466 critic_loss=13.96173 actor_loss=-31.64963 elapsed=7.4m
+outer=02/20 inner=102/118 steps=901,120 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.4248 critic_loss=12.91394 actor_loss=-32.52138 elapsed=7.5m
+outer=02/20 inner=103/118 steps=905,216 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.8688 critic_loss=13.77350 actor_loss=-32.26752 elapsed=7.5m
+outer=02/20 inner=104/118 steps=909,312 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.8765 critic_loss=13.15231 actor_loss=-32.17225 elapsed=7.5m
+outer=02/20 inner=105/118 steps=913,408 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.9976 critic_loss=14.13193 actor_loss=-32.22216 elapsed=7.6m
+outer=02/20 inner=106/118 steps=917,504 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.1703 critic_loss=12.81084 actor_loss=-32.83205 elapsed=7.6m
+outer=02/20 inner=107/118 steps=921,600 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.7310 critic_loss=13.14314 actor_loss=-33.27506 elapsed=7.6m
+outer=02/20 inner=108/118 steps=925,696 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.8708 critic_loss=12.71185 actor_loss=-32.71213 elapsed=7.7m
+outer=02/20 inner=109/118 steps=929,792 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.0309 critic_loss=13.69253 actor_loss=-32.53785 elapsed=7.7m
+outer=02/20 inner=110/118 steps=933,888 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.0175 critic_loss=13.78046 actor_loss=-32.72200 elapsed=7.7m
+outer=02/20 inner=111/118 steps=937,984 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.0199 critic_loss=13.27707 actor_loss=-32.92917 elapsed=7.8m
+outer=02/20 inner=112/118 steps=942,080 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.7283 critic_loss=13.04905 actor_loss=-32.92797 elapsed=7.8m
+outer=02/20 inner=113/118 steps=946,176 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.1091 critic_loss=13.64728 actor_loss=-33.15205 elapsed=7.8m
+outer=02/20 inner=114/118 steps=950,272 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.9602 critic_loss=12.83089 actor_loss=-33.43901 elapsed=7.9m
+outer=02/20 inner=115/118 steps=954,368 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.6401 critic_loss=13.76876 actor_loss=-32.55040 elapsed=7.9m
+outer=02/20 inner=116/118 steps=958,464 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.0849 critic_loss=11.81488 actor_loss=-33.19168 elapsed=7.9m
+outer=02/20 inner=117/118 steps=962,560 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.2859 critic_loss=14.27590 actor_loss=-32.20240 elapsed=8.0m
+outer=02/20 inner=118/118 steps=966,656 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.8781 critic_loss=13.30252 actor_loss=-32.63688 elapsed=8.0m
+Saved: /mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/LEAP_Hand_Sim/leapsim/envpg_logs/envpg_outer_002.pt
+outer=03/20 inner=001/118 steps=970,752 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.2265 critic_loss=14.35310 actor_loss=-33.36720 elapsed=8.0m
+outer=03/20 inner=002/118 steps=974,848 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.1240 critic_loss=13.43484 actor_loss=-32.72264 elapsed=8.1m
+outer=03/20 inner=003/118 steps=978,944 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-58.3366 critic_loss=13.44697 actor_loss=-33.42913 elapsed=8.1m
+outer=03/20 inner=004/118 steps=983,040 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.1850 critic_loss=12.85136 actor_loss=-33.56215 elapsed=8.1m
+outer=03/20 inner=005/118 steps=987,136 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-53.4848 critic_loss=14.74485 actor_loss=-33.64749 elapsed=8.2m
+outer=03/20 inner=006/118 steps=991,232 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.2184 critic_loss=13.67861 actor_loss=-33.21325 elapsed=8.2m
+outer=03/20 inner=007/118 steps=995,328 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.6889 critic_loss=14.17377 actor_loss=-33.09726 elapsed=8.2m
+outer=03/20 inner=008/118 steps=999,424 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-50.3668 critic_loss=13.26045 actor_loss=-33.26920 elapsed=8.3m
+outer=03/20 inner=009/118 steps=1,003,520 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-55.6670 critic_loss=12.80263 actor_loss=-33.76912 elapsed=8.3m
+outer=03/20 inner=010/118 steps=1,007,616 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-51.3693 critic_loss=14.01509 actor_loss=-33.06018 elapsed=8.3m
+outer=03/20 inner=011/118 steps=1,011,712 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.6340 critic_loss=13.06471 actor_loss=-33.68450 elapsed=8.4m
+outer=03/20 inner=012/118 steps=1,015,808 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.5895 critic_loss=12.42555 actor_loss=-33.71878 elapsed=8.4m
+outer=03/20 inner=013/118 steps=1,019,904 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.9080 critic_loss=13.63889 actor_loss=-32.77524 elapsed=8.4m
+outer=03/20 inner=014/118 steps=1,024,000 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.0488 critic_loss=13.77313 actor_loss=-33.58410 elapsed=8.4m
+outer=03/20 inner=015/118 steps=1,028,096 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.8821 critic_loss=13.76867 actor_loss=-33.24661 elapsed=8.5m
+outer=03/20 inner=016/118 steps=1,032,192 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.6197 critic_loss=12.61026 actor_loss=-34.00247 elapsed=8.5m
+outer=03/20 inner=017/118 steps=1,036,288 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.2591 critic_loss=14.28260 actor_loss=-33.76058 elapsed=8.6m
+outer=03/20 inner=018/118 steps=1,040,384 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.3211 critic_loss=13.64975 actor_loss=-34.25149 elapsed=8.6m
+outer=03/20 inner=019/118 steps=1,044,480 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.7738 critic_loss=14.53338 actor_loss=-33.90846 elapsed=8.6m
+outer=03/20 inner=020/118 steps=1,048,576 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.2451 critic_loss=12.86458 actor_loss=-34.16714 elapsed=8.7m
+outer=03/20 inner=021/118 steps=1,052,672 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.6833 critic_loss=13.44806 actor_loss=-34.22898 elapsed=8.7m
+outer=03/20 inner=022/118 steps=1,056,768 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.6761 critic_loss=13.51259 actor_loss=-33.93170 elapsed=8.7m
+outer=03/20 inner=023/118 steps=1,060,864 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.9709 critic_loss=13.41637 actor_loss=-33.61498 elapsed=8.8m
+outer=03/20 inner=024/118 steps=1,064,960 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.8778 critic_loss=14.29593 actor_loss=-33.94764 elapsed=8.8m
+outer=03/20 inner=025/118 steps=1,069,056 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.9401 critic_loss=14.11597 actor_loss=-33.17560 elapsed=8.8m
+outer=03/20 inner=026/118 steps=1,073,152 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.5870 critic_loss=14.33514 actor_loss=-33.68064 elapsed=8.9m
+outer=03/20 inner=027/118 steps=1,077,248 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.3214 critic_loss=14.16884 actor_loss=-34.26978 elapsed=8.9m
+outer=03/20 inner=028/118 steps=1,081,344 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.8055 critic_loss=12.91817 actor_loss=-33.88804 elapsed=8.9m
+outer=03/20 inner=029/118 steps=1,085,440 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.1532 critic_loss=13.67194 actor_loss=-33.46811 elapsed=8.9m
+outer=03/20 inner=030/118 steps=1,089,536 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.2325 critic_loss=13.54742 actor_loss=-35.15033 elapsed=9.0m
+outer=03/20 inner=031/118 steps=1,093,632 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-56.1322 critic_loss=13.22546 actor_loss=-33.99609 elapsed=9.0m
+outer=03/20 inner=032/118 steps=1,097,728 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-57.6781 critic_loss=14.07574 actor_loss=-35.29017 elapsed=9.0m
+outer=03/20 inner=033/118 steps=1,101,824 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-53.3391 critic_loss=13.45393 actor_loss=-34.60001 elapsed=9.1m
+outer=03/20 inner=034/118 steps=1,105,920 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.8508 critic_loss=14.12051 actor_loss=-34.52498 elapsed=9.1m
+outer=03/20 inner=035/118 steps=1,110,016 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.2763 critic_loss=13.48380 actor_loss=-34.66712 elapsed=9.1m
+outer=03/20 inner=036/118 steps=1,114,112 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.5626 critic_loss=12.90859 actor_loss=-34.03630 elapsed=9.2m
+outer=03/20 inner=037/118 steps=1,118,208 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.2371 critic_loss=13.54079 actor_loss=-34.96958 elapsed=9.2m
+outer=03/20 inner=038/118 steps=1,122,304 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.5887 critic_loss=13.99166 actor_loss=-34.94582 elapsed=9.2m
+outer=03/20 inner=039/118 steps=1,126,400 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.3274 critic_loss=14.04046 actor_loss=-34.83765 elapsed=9.3m
+outer=03/20 inner=040/118 steps=1,130,496 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.7780 critic_loss=14.19253 actor_loss=-35.10513 elapsed=9.3m
+outer=03/20 inner=041/118 steps=1,134,592 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.1415 critic_loss=14.53317 actor_loss=-36.04140 elapsed=9.3m
+outer=03/20 inner=042/118 steps=1,138,688 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.1944 critic_loss=14.17982 actor_loss=-35.62671 elapsed=9.4m
+outer=03/20 inner=043/118 steps=1,142,784 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.1314 critic_loss=13.05986 actor_loss=-35.03728 elapsed=9.4m
+outer=03/20 inner=044/118 steps=1,146,880 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.9345 critic_loss=13.12401 actor_loss=-34.70053 elapsed=9.4m
+outer=03/20 inner=045/118 steps=1,150,976 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.1008 critic_loss=12.55013 actor_loss=-35.00861 elapsed=9.5m
+outer=03/20 inner=046/118 steps=1,155,072 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.5836 critic_loss=13.93070 actor_loss=-34.71621 elapsed=9.5m
+outer=03/20 inner=047/118 steps=1,159,168 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.8755 critic_loss=13.09949 actor_loss=-35.14296 elapsed=9.5m
+outer=03/20 inner=048/118 steps=1,163,264 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-53.7761 critic_loss=13.91119 actor_loss=-34.71666 elapsed=9.6m
+outer=03/20 inner=049/118 steps=1,167,360 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-50.6074 critic_loss=13.39977 actor_loss=-34.96596 elapsed=9.6m
+outer=03/20 inner=050/118 steps=1,171,456 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.6858 critic_loss=13.27032 actor_loss=-34.94705 elapsed=9.6m
+outer=03/20 inner=051/118 steps=1,175,552 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-35.6351 critic_loss=13.20931 actor_loss=-35.94574 elapsed=9.7m
+outer=03/20 inner=052/118 steps=1,179,648 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.8146 critic_loss=14.20978 actor_loss=-35.48655 elapsed=9.7m
+outer=03/20 inner=053/118 steps=1,183,744 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.8396 critic_loss=15.29723 actor_loss=-34.81378 elapsed=9.7m
+outer=03/20 inner=054/118 steps=1,187,840 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-43.8184 critic_loss=14.11317 actor_loss=-35.10833 elapsed=9.8m
+outer=03/20 inner=055/118 steps=1,191,936 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.5608 critic_loss=13.24070 actor_loss=-34.88023 elapsed=9.8m
+outer=03/20 inner=056/118 steps=1,196,032 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.3888 critic_loss=14.01587 actor_loss=-35.87631 elapsed=9.9m
+outer=03/20 inner=057/118 steps=1,200,128 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-50.6897 critic_loss=13.33512 actor_loss=-35.97474 elapsed=9.9m
+outer=03/20 inner=058/118 steps=1,204,224 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.8717 critic_loss=14.26518 actor_loss=-35.39886 elapsed=9.9m
+outer=03/20 inner=059/118 steps=1,208,320 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.2643 critic_loss=13.79953 actor_loss=-34.66086 elapsed=10.0m
+outer=03/20 inner=060/118 steps=1,212,416 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.4378 critic_loss=13.74500 actor_loss=-35.48493 elapsed=10.0m
+outer=03/20 inner=061/118 steps=1,216,512 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.5151 critic_loss=14.43284 actor_loss=-35.91888 elapsed=10.0m
+outer=03/20 inner=062/118 steps=1,220,608 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.6587 critic_loss=14.38960 actor_loss=-36.03002 elapsed=10.1m
+outer=03/20 inner=063/118 steps=1,224,704 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.7055 critic_loss=14.09363 actor_loss=-35.72371 elapsed=10.1m
+outer=03/20 inner=064/118 steps=1,228,800 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.3997 critic_loss=14.34160 actor_loss=-36.53165 elapsed=10.1m
+outer=03/20 inner=065/118 steps=1,232,896 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.5733 critic_loss=14.75483 actor_loss=-35.34930 elapsed=10.2m
+outer=03/20 inner=066/118 steps=1,236,992 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.5939 critic_loss=13.21714 actor_loss=-35.78157 elapsed=10.2m
+outer=03/20 inner=067/118 steps=1,241,088 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.6121 critic_loss=14.28872 actor_loss=-36.66343 elapsed=10.2m
+outer=03/20 inner=068/118 steps=1,245,184 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.7208 critic_loss=14.20749 actor_loss=-36.03147 elapsed=10.3m
+outer=03/20 inner=069/118 steps=1,249,280 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-51.6431 critic_loss=13.56123 actor_loss=-36.81931 elapsed=10.3m
+outer=03/20 inner=070/118 steps=1,253,376 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.1201 critic_loss=13.53302 actor_loss=-37.03001 elapsed=10.3m
+outer=03/20 inner=071/118 steps=1,257,472 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.5220 critic_loss=13.94671 actor_loss=-36.39449 elapsed=10.4m
+outer=03/20 inner=072/118 steps=1,261,568 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.3496 critic_loss=15.17162 actor_loss=-35.56271 elapsed=10.4m
+outer=03/20 inner=073/118 steps=1,265,664 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.9275 critic_loss=14.90325 actor_loss=-36.01132 elapsed=10.4m
+outer=03/20 inner=074/118 steps=1,269,760 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.5858 critic_loss=14.40304 actor_loss=-37.01101 elapsed=10.5m
+outer=03/20 inner=075/118 steps=1,273,856 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.4793 critic_loss=14.09994 actor_loss=-36.03522 elapsed=10.5m
+outer=03/20 inner=076/118 steps=1,277,952 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-42.5509 critic_loss=13.99801 actor_loss=-36.36470 elapsed=10.5m
+outer=03/20 inner=077/118 steps=1,282,048 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.7489 critic_loss=14.43384 actor_loss=-36.91571 elapsed=10.6m
+outer=03/20 inner=078/118 steps=1,286,144 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-45.6936 critic_loss=14.92460 actor_loss=-36.63633 elapsed=10.6m
+outer=03/20 inner=079/118 steps=1,290,240 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.4683 critic_loss=14.04880 actor_loss=-36.88794 elapsed=10.6m
+outer=03/20 inner=080/118 steps=1,294,336 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-33.9773 critic_loss=14.53297 actor_loss=-36.85644 elapsed=10.7m
+outer=03/20 inner=081/118 steps=1,298,432 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-34.9474 critic_loss=15.14988 actor_loss=-37.69549 elapsed=10.7m
+outer=03/20 inner=082/118 steps=1,302,528 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.9860 critic_loss=15.37030 actor_loss=-37.02286 elapsed=10.7m
+outer=03/20 inner=083/118 steps=1,306,624 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.7528 critic_loss=14.52169 actor_loss=-37.10149 elapsed=10.8m
+outer=03/20 inner=084/118 steps=1,310,720 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-58.4720 critic_loss=14.10243 actor_loss=-36.81601 elapsed=10.8m
+outer=03/20 inner=085/118 steps=1,314,816 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-57.2229 critic_loss=15.00436 actor_loss=-36.38768 elapsed=10.8m
+outer=03/20 inner=086/118 steps=1,318,912 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.2811 critic_loss=13.62567 actor_loss=-36.77816 elapsed=10.9m
+outer=03/20 inner=087/118 steps=1,323,008 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.7078 critic_loss=14.23392 actor_loss=-37.33679 elapsed=10.9m
+outer=03/20 inner=088/118 steps=1,327,104 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.5336 critic_loss=13.82676 actor_loss=-37.25939 elapsed=10.9m
+outer=03/20 inner=089/118 steps=1,331,200 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.3391 critic_loss=13.77695 actor_loss=-36.64285 elapsed=11.0m
+outer=03/20 inner=090/118 steps=1,335,296 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-41.9589 critic_loss=14.67059 actor_loss=-37.41008 elapsed=11.0m
+outer=03/20 inner=091/118 steps=1,339,392 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-48.4803 critic_loss=14.89317 actor_loss=-37.63690 elapsed=11.0m
+outer=03/20 inner=092/118 steps=1,343,488 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-50.1209 critic_loss=14.44804 actor_loss=-37.20789 elapsed=11.1m
+outer=03/20 inner=093/118 steps=1,347,584 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.1743 critic_loss=14.75480 actor_loss=-36.73052 elapsed=11.1m
+outer=03/20 inner=094/118 steps=1,351,680 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-46.3434 critic_loss=14.56884 actor_loss=-36.68194 elapsed=11.1m
+outer=03/20 inner=095/118 steps=1,355,776 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-51.1046 critic_loss=14.86962 actor_loss=-36.94757 elapsed=11.2m
+outer=03/20 inner=096/118 steps=1,359,872 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-65.0724 critic_loss=15.74579 actor_loss=-36.81380 elapsed=11.2m
+outer=03/20 inner=097/118 steps=1,363,968 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-64.4235 critic_loss=15.16072 actor_loss=-37.02276 elapsed=11.2m
+outer=03/20 inner=098/118 steps=1,368,064 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-55.3811 critic_loss=14.85786 actor_loss=-37.78780 elapsed=11.3m
+outer=03/20 inner=099/118 steps=1,372,160 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.0385 critic_loss=15.06673 actor_loss=-37.19094 elapsed=11.3m
+outer=03/20 inner=100/118 steps=1,376,256 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.5969 critic_loss=15.67396 actor_loss=-37.24856 elapsed=11.3m
+outer=03/20 inner=101/118 steps=1,380,352 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.3742 critic_loss=14.08321 actor_loss=-37.26517 elapsed=11.4m
+outer=03/20 inner=102/118 steps=1,384,448 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.9847 critic_loss=13.64624 actor_loss=-38.21518 elapsed=11.4m
+outer=03/20 inner=103/118 steps=1,388,544 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.1869 critic_loss=15.15328 actor_loss=-36.51923 elapsed=11.4m
+outer=03/20 inner=104/118 steps=1,392,640 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.5739 critic_loss=14.24866 actor_loss=-37.90675 elapsed=11.5m
+outer=03/20 inner=105/118 steps=1,396,736 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.6269 critic_loss=14.09207 actor_loss=-36.96692 elapsed=11.5m
+outer=03/20 inner=106/118 steps=1,400,832 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.2105 critic_loss=15.74580 actor_loss=-37.67350 elapsed=11.5m
+outer=03/20 inner=107/118 steps=1,404,928 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-44.7749 critic_loss=15.14202 actor_loss=-38.49250 elapsed=11.6m
+outer=03/20 inner=108/118 steps=1,409,024 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-39.9703 critic_loss=14.22477 actor_loss=-38.12636 elapsed=11.6m
+outer=03/20 inner=109/118 steps=1,413,120 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-37.9444 critic_loss=15.02094 actor_loss=-38.09838 elapsed=11.6m
+outer=03/20 inner=110/118 steps=1,417,216 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-38.1874 critic_loss=15.34095 actor_loss=-38.59833 elapsed=11.7m
+outer=03/20 inner=111/118 steps=1,421,312 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-36.6896 critic_loss=14.27522 actor_loss=-36.98498 elapsed=11.7m
+outer=03/20 inner=112/118 steps=1,425,408 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-40.1658 critic_loss=15.65762 actor_loss=-38.65371 elapsed=11.7m
+outer=03/20 inner=113/118 steps=1,429,504 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-49.0738 critic_loss=14.73233 actor_loss=-38.17553 elapsed=11.8m
+outer=03/20 inner=114/118 steps=1,433,600 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.2139 critic_loss=14.08401 actor_loss=-37.98522 elapsed=11.8m
+outer=03/20 inner=115/118 steps=1,437,696 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.4949 critic_loss=14.85137 actor_loss=-37.38944 elapsed=11.8m
+outer=03/20 inner=116/118 steps=1,441,792 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-47.2447 critic_loss=14.15020 actor_loss=-38.16394 elapsed=11.9m
+outer=03/20 inner=117/118 steps=1,445,888 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-52.0540 critic_loss=15.61532 actor_loss=-38.06200 elapsed=11.9m
+outer=03/20 inner=118/118 steps=1,449,984 palm_mu=1.0000 tip_mu=1.0000 length=1.0000 ep_return100=-54.8333 critic_loss=15.02836 actor_loss=-39.24275 elapsed=11.9m
+
+[MORPHOLOGY UPDATE] 1.000000 -> 1.000524; regenerating meshes and rebuilding Isaac Gym...

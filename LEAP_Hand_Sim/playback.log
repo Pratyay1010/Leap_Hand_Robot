@@ -1,0 +1,20 @@
+Importing module 'gym_38' (/mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/isaacgym/python/isaacgym/_bindings/linux-x86_64/gym_38.so)
+Setting GYM_USD_PLUG_INFO_PATH to /mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/isaacgym/python/isaacgym/_bindings/linux-x86_64/usd/plugInfo.json
+PyTorch version 2.4.1+cu121
+Device count 1
+/mnt/c/Users/Pratyay/Desktop/Leap Hand Robot/Leap_Hand_Main_Repo/isaacgym/python/isaacgym/_bindings/src/gymtorch
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Using /home/pratyay/.cache/torch_extensions/py38_cu121 as PyTorch extensions root...
+Emitting ninja build file /home/pratyay/.cache/torch_extensions/py38_cu121/gymtorch/build.ninja...
+Building extension module gymtorch...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading checkpoint: leapsim/envpg_logs/final_envpg.pt
+Loaded friction: palm=1.9001, fingertips=2.9293
+Not connected to PVD
+Physics Engine: PhysX
+Physics Device: cpu
+GPU Pipeline: disabled

@@ -1,0 +1,194 @@
+
+import numpy as np
+import isaacgym
+import torch
+
+from pathlib import Path
+from hydra import compose, initialize_config_dir
+from omegaconf import OmegaConf
+from gymnasium import spaces
+
+from stable_baselines3.common.vec_env import VecEnv
+from leapsim.tasks.leap_hand_rot import LeapHandRot
+
+
+def make_leap_env(
+    num_envs=128,
+    sim_device="cuda:0",
+    rl_device="cuda:0",
+    headless=True,
+    graphics_device_id=0,
+):
+    config_dir = Path(__file__).resolve().parents[1] / "cfg"
+
+    overrides = [
+        f"num_envs={num_envs}",
+        f"sim_device={sim_device}",
+        f"rl_device={rl_device}",
+        f"headless={headless}",
+        f"graphics_device_id={graphics_device_id}",
+        "wandb_activate=False",
+        "multi_gpu=False",
+    ]
+
+    with initialize_config_dir(
+        config_dir=str(config_dir),
+        version_base=None,
+    ):
+        cfg = compose(
+            config_name="config",
+            overrides=overrides,
+        )
+
+    # LeapHandRot expects cfg.task, not the root Hydra config.
+    task_cfg = cfg.task
+
+    # Allow modifications to the task configuration.
+    OmegaConf.set_struct(task_cfg, False)
+
+    task_cfg.env.numEnvs = num_envs
+    task_cfg.on_evaluation = False
+
+    task_cfg.enableCameraSensors = False
+
+    env = LeapHandRot(
+        cfg=task_cfg,
+        rl_device=rl_device,
+        sim_device=sim_device,
+        graphics_device_id=graphics_device_id,
+        headless=True,
+    )
+
+    return env
+
+
+class LeapHandSB3VecEnv(VecEnv):
+
+    def __init__(self, env):
+        self.env = env
+        self.actions = None
+
+        observation_space = spaces.Box(
+            low=-np.inf,
+            high=np.inf,
+            shape=(env.num_obs,),
+            dtype=np.float32,
+        )
+
+        action_space = spaces.Box(
+            low=-1.0,
+            high=1.0,
+            shape=(env.num_acts,),
+            dtype=np.float32,
+        )
+
+        super().__init__(
+            env.num_envs,
+            observation_space,
+            action_space,
+        )
+
+    @staticmethod
+    def _to_numpy(tensor):
+        return (
+            tensor.detach()
+            .cpu()
+            .numpy()
+            .astype(np.float32, copy=False)
+        )
+
+    def reset(self):
+        for seed in self._seeds:
+            if seed is not None:
+                from stable_baselines3.common.utils import set_random_seed
+                set_random_seed(seed)
+                break
+
+        self._reset_seeds()
+
+        obs_dict = self.env.reset()
+        obs = obs_dict["obs"]
+
+        return self._to_numpy(obs)
+
+    def step_async(self, actions):
+        self.actions = np.asarray(
+            actions,
+            dtype=np.float32,
+        )
+
+    def step_wait(self):
+        if self.actions is None:
+            raise RuntimeError("No actions received")
+
+        actions = torch.as_tensor(
+            self.actions,
+            dtype=torch.float32,
+            device=self.env.device,
+        )
+
+        obs_dict, rewards, dones, extras = self.env.step(actions)
+
+        obs = self._to_numpy(obs_dict["obs"])
+        rewards = self._to_numpy(rewards).reshape(-1)
+        dones = (
+            dones.detach()
+            .cpu()
+            .numpy()
+            .astype(bool)
+        )
+
+        infos = []
+
+        for i in range(self.num_envs):
+            infos.append({
+                "TimeLimit.truncated": False,
+            })
+
+        self.actions = None
+
+        return obs, rewards, dones, infos
+
+    def close(self):
+        if self.env is None:
+            return
+
+        if getattr(self.env, "viewer", None) is not None:
+            self.env.gym.destroy_viewer(self.env.viewer)
+            self.env.viewer = None
+
+        if getattr(self.env, "sim", None) is not None:
+            self.env.gym.destroy_sim(self.env.sim)
+            self.env.sim = None
+
+        self.env = None
+
+    def render(self, mode="human"):
+        return self.env.render(mode=mode)
+
+    def get_attr(self, attr_name, indices=None):
+        indices = self._get_indices(indices)
+        value = getattr(self.env, attr_name)
+        return [value for _ in indices]
+
+    def set_attr(self, attr_name, value, indices=None):
+        setattr(self.env, attr_name, value)
+
+    def env_method(
+        self,
+        method_name,
+        *method_args,
+        indices=None,
+        **method_kwargs,
+    ):
+        indices = self._get_indices(indices)
+        method = getattr(self.env, method_name)
+
+        return [
+            method(*method_args, **method_kwargs)
+            for _ in indices
+        ]
+
+    def env_is_wrapped(self, wrapper_class, indices=None):
+        indices = self._get_indices(indices)
+        return [False for _ in indices]
